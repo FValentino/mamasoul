@@ -1,0 +1,29 @@
+
+
+.user{
+    position: relative;
+    float: left;
+}
+
+
+@media (max-width:767px){
+    .divider {
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+        background-color: grey;
+    }
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}

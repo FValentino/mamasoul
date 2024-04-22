@@ -1,0 +1,48 @@
+function dropDown(){
+    let menu = document.getElementById('dropdownMenu');
+    menu?.classList.toggle('hidden');
+}
+
+return(
+    <>
+        <nav className="mt-4 font-extrabold items-center">
+            <div className="container flex mx-auto">
+                <div className="float-start flex">   
+                    <div > 
+                        <Image alt="logo" src={logo} width="150"/>
+                    </div>  
+                </div>
+                <ul className="flex mx-auto space-x-12 items-center">
+                    <li> <a href="#">Inicio</a>  </li>
+                    <li> <a href="">Nosotros</a>  </li>
+                    <li> 
+                        <div className="flex">
+                            <button onClick={() => dropDown()} > Categorias  </button>
+                            <div className="flex items-center">
+                                <div className="shape"></div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="">Contacto</a>  </li>
+                </ul>
+                <div className="float-end flex space-x-6 items-center">
+                    <div>
+                        <Image alt="login" src={usuario} width="30" height="30"/>
+                    </div>
+                    <div>
+                        <Image alt="carrito" src={carrito} width="30" height="30"/>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="dropdownMenu" className="flex justify-center hidden">
+            <ul className="mx-auto flex space-x-12 ">
+                <li> <a href="">Riñoneras</a> </li>
+                <li> <a href="">Bolsos y carteras</a> </li>
+                <li> <a href="">Mochilas</a> </li>
+                <li> <a href="">Billeteras</a> </li>
+                <li> <a href="">Cartucheras y neceser</a> </li>
+                <li> <a href="">Tarjeteros</a> </li>
+            </ul>
+        </div>
+    </>
